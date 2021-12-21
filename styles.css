@@ -1,0 +1,408 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* flex-wrap: wrap; */
+}
+body{
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+}
+.banner{
+    height: 80vh;
+    min-height: 600px;
+    background-image: url('./images/desktop/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 7em;
+    
+}
+.header .menu a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    
+}
+.header .menu a:not(:last-child){
+    margin-right:30px;
+}
+.ContactBtn{
+    background:hsl(0, 0%, 100%) ;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.ContactBtn:hover{
+    background: rgba(255, 255, 255, 0.404);
+    border: 1px solid #fff;
+    color: #fff;
+}
+#Btn_contact{
+    color: black;
+}
+.header__content{
+    margin-top: 50px;
+}
+.Creatives_text{
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.section{
+  height: 550px;
+  display: flex;
+  
+}
+.section .container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__img{
+ width: 100%; 
+ height: 100%;
+ object-fit: cover;
+}
+.innerContainer{
+    width: 70%;
+}
+.container__header{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.container__content{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    color: hsl(213, 9%, 39%);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.learn{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom: 7px solid hsl(51, 100%, 49%);
+    border-radius: 10px;
+    cursor: pointer;
+       
+}
+.learn_stand{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom: 7px solid hsl(7, 99%, 70%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.twoImagesSection{
+    height: 550px;
+    display: flex;
+}
+
+.graphic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.innerImagesSectionContainer1{
+    /* background-image: url("./images/desktop/image-graphic-design.jpg"); */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center; 
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: hsl(167, 40%, 24%);
+}
+.innerImagesSectionContainer2{
+    /* background-image: url("./images/desktop/image-photography.jpg"); */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: hsl(198, 62%, 26%);
+}
+.Setting{
+    width: 70%;
+    position: absolute;
+    bottom:30px;
+    font: 0.75rem;
+}
+.innerImagesSectionContainerHeader{
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.innerImagesSectionContainerContent{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.testimonials{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+}
+.testimonials div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    gap: 3;
+}
+.testimonials_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 300px;
+    margin: 25px;
+}
+.testimonials_header{
+    font-size:2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 125px;
+    color: hsl(213, 9%, 39%);
+}
+.clientImages{
+    border-radius: 50%;
+    width: 100px;
+    vertical-align: top;
+   
+    position: absolute;
+    top:-80px;
+}
+.testimonials_content{
+    font-size: 0.75rem;
+    margin-bottom: 60px;
+    margin-top: 45px;
+    color: hsl(212, 27%, 19%);
+}
+.post{
+    margin-top: 25px;
+    color:  hsl(213, 9%, 39%);
+}
+
+.FourImages{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FourImages div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex:1;
+    }
+.FourImages div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+.footer{
+    background-color:#47b39d ;
+    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#logoImgFooter{
+    filter: invert(1);
+    filter: invert(59%) sepia(51%) saturate(432%) hue-rotate(118deg) brightness(95%) contrast(85%);
+    margin-bottom: 25px;
+}
+.FooterLinks{
+    margin-bottom: 30px;
+}
+.FooterLinks a{
+    text-decoration: none;
+    color: #25564b;
+    margin: 30px;
+}
+.FooterLinks a:hover{
+    color: #fff;
+}
+.social_links img{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.toggleMenu{
+    display: none;
+}
+/* Responsive nav */
+.responsivenav{
+    height: 300px;
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: #fff;
+    clip-path: polygon(92% 11%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 60%, 0 11%);;;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     display: none;
+}
+.resopnsive_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.resopnsive_menu a{
+    text-decoration: none;
+    color:hsl(212, 27%, 19%) ;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.responsive_ContactBtn{
+    background:hsl(51, 100%, 49%) ;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.responsivenav.active{
+    display: flex;
+} 
+@media screen and (max-width:576px) {
+    body{
+        Max-width: 100%;
+    }
+    .SectionColumn{
+        flex-direction: column-reverse;
+        height: auto;
+        width: auto;
+     }
+     .SectionColumn2{
+        
+         flex-direction: column;
+         height: auto;
+     }
+     .container{
+         width: 100%;
+     }
+     .menu{
+         display: none;
+     }
+     .header{
+        padding: 1.5em 2em;
+     }
+     .toggleMenu{
+         display: block;
+         cursor: pointer;
+     }
+    .Creatives_text{
+        font-size: 2.5rem;
+    }
+    .Down_Arrow{
+        position: relative;
+        bottom: 50px;
+    }
+    .innerContainer{
+        padding: 2rem;
+    }
+    .twoImagesSection{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        
+    }
+   .innerImagesSectionContainerHeader{
+       font-size: 1rem;
+   }
+   .innerImagesSectionContainerContent{
+       font-size: 0.75rem;
+    }
+    .testimonials{
+        height: auto;
+    }
+    .testimonials div{
+        flex-direction: column;
+        height: auto;
+    }
+    .testimonials_header{
+        margin-top: 35px;
+        margin-bottom: 60px;
+    }
+    .testimonials_content{
+        margin-bottom: 20px;
+    }
+    .post{
+        margin-top: 5px;
+    }
+    .testimonials_container{
+        margin-top: 105px;
+    }
+    .FourImages{
+        height: auto;
+    }
+    .FourImages div{
+        flex-direction: column;
+        height: auto;
+
+    }
+   
+}
+@media screen and (max-width:764px) {
+    .menu{
+        display: none;
+    }
+    .header{
+       padding: 1.5em 2em;
+    }
+    .toggleMenu{
+        display: block;
+        cursor: pointer;
+    }
+    .Creatives_text{
+        font-size: 4rem;
+    }
+    .Down_Arrow{
+        position: relative;
+        bottom: 30px;
+    }
+}
